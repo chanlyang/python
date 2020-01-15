@@ -91,8 +91,7 @@ class Player(object):
 # 排序规则-先根据花色再根据点数排序
 def get_key(card):
     return (card.suite, card.face)
-
-
+    
 def main():
     p = Poker()
     p.shuffle()
@@ -105,6 +104,10 @@ def main():
         player.arrange(get_key)
         print(player.cards_on_hand)
 
-
+"""
+def main():
+    cards = [Card(suite, face) for suite in '♠♥♣♦' for face in range(1, 14)]
+    print(cards)
+"""
 if __name__ == '__main__':
     main()
