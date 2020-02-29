@@ -100,10 +100,10 @@ class Ultraman(Fighter):
         self._mp += incr_point
         return incr_point
 
-    def __str__(self):12
-        return '~~~%s奥特曼~~~\n' % self._name + \
-            '生命值: %d\n' % self._hp + \
-            '魔法值: %d\n' % self._mp
+    def __str__(self):
+        return '~~~%s奥特曼~~~' % self._name \
+               + '生命值: %d' % self._hp \
+               + '魔法值: %d' % self._mp
 
 
 class Monster(Fighter):
